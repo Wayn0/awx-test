@@ -1,0 +1,9 @@
+- name: Add common packages
+  apt:
+    name: "{{ item.name }}"
+    state: latest
+  with_items:
+    - {name: vim}
+    - {name: screen}
+    - {name: tmux}
+  when: ansible_os_family == 'Debian'
