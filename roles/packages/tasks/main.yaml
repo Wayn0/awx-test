@@ -7,4 +7,5 @@
     - {name: screen}
     - {name: tmux}
     - {name: htop}
+    - {name: curl}
   when: ansible_os_family == 'Debian'
