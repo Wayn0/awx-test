@@ -6,4 +6,5 @@
     - {name: vim}
     - {name: screen}
     - {name: tmux}
+    - {name: htop}
   when: ansible_os_family == 'Debian'
